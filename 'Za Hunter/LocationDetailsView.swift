@@ -25,7 +25,7 @@ struct LocationDetailsView: View {
             Button{
                 let latitude = selectedMapItem.placemark.coordinate.latitude
                 let longitude = selectedMapItem.placemark.coordinate.longitude
-                let url = URL(string: "maps://?daddr=\(latitude), \(longitude)")
+                let url = URL(string: "maps://?daddr=\(latitude),\(longitude)")
                 if UIApplication.shared.canOpenURL(url!){
                     UIApplication.shared.open(url!, options: [:])
                 }
