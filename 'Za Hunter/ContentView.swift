@@ -22,16 +22,23 @@ struct ContentView: View {
                 longitudeDelta: 0.05)
         )
     var body: some View {
-        Map(coordinateRegion: $region,
-            interactionModes: .all,
-            showsUserLocation: true,
-            userTrackingMode: $userTrackingMode, annotationItems: places){ place in
-            MapPin(coordinate: place.annotation.coordinate)
-        }
+        NavigationView{
+            Map(coordinateRegion: $region,
+                interactionModes: .all,
+                showsUserLocation: true,
+                userTrackingMode: $userTrackingMode, annotationItems: places){ place in
+                MapAnnotation(coordinate: place.annotation.coordinate){
+                    NavigationLink(destination: LocationDetailsView(selectedMapItem: place.mapItem)){
+                        Image("pizza")
+                    }
+                }
+            }
             .onAppear(){
                 performSearch(item: "pizza")
             }
-        
+            .navigationTitle("'Za Hunter")
+            .navigationBarTitleDisplayMode(.inline)
+        }
     }
     func performSearch(item: String){
         let searchRequest = MKLocalSearch.Request()

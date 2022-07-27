@@ -12,6 +12,7 @@
 		C230D9A1289197A2000D28ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C230D9A0289197A2000D28ED /* Assets.xcassets */; };
 		C230D9A4289197A2000D28ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C230D9A3289197A2000D28ED /* Preview Assets.xcassets */; };
 		C230D9AB28919A5A000D28ED /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C230D9AA28919A5A000D28ED /* LocationManager.swift */; };
+		C230D9AD28919E40000D28ED /* LocationDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C230D9AC28919E40000D28ED /* LocationDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		C230D9A0289197A2000D28ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C230D9A3289197A2000D28ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C230D9AA28919A5A000D28ED /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		C230D9AC28919E40000D28ED /* LocationDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				C230D99C289197A1000D28ED /* _Za_HunterApp.swift */,
+				C230D9AC28919E40000D28ED /* LocationDetailsView.swift */,
 				C230D99E289197A1000D28ED /* ContentView.swift */,
 				C230D9AA28919A5A000D28ED /* LocationManager.swift */,
 				C230D9A0289197A2000D28ED /* Assets.xcassets */,
@@ -142,6 +145,7 @@
 			files = (
 				C230D99F289197A1000D28ED /* ContentView.swift in Sources */,
 				C230D99D289197A1000D28ED /* _Za_HunterApp.swift in Sources */,
+				C230D9AD28919E40000D28ED /* LocationDetailsView.swift in Sources */,
 				C230D9AB28919A5A000D28ED /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
